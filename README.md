@@ -6,7 +6,7 @@
 
 --------------------------------------------------------------------------------
 
-# Temporal Multi-Channel Vision Transformer (TMC-VIT)
+# Temporal Multi-Channel Vision Transformer (TMC-ViT)
 The TMC-ViT adapts the ViT [[1]](#1) architecture to process temporal signals with one or more channels, such as sEMG.
 
 ## References

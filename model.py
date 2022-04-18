@@ -96,7 +96,7 @@ def main():
     X_test = X_test.reshape(-1, 16, 40, 1)
 
     num_classes = 18
-    input_shape = (16, 40, 1)
+    input_shape = input_shape=[X_train.shape[1], X_train.shape[2], 1])
     image_size1 = 16
     image_size2= 20
     patch_size = 4

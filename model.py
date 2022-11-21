@@ -6,18 +6,15 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Flatten, Dense, Activation, Dropout, Conv2D, MaxPooling2D, Softmax, BatchNormalization
 from tensorflow.keras.optimizers import Adam
 
-
-
 # Load data
 X_test = np.load('X_test.npy')
 X_train = np.load('X_train.npy')
 y_test = np.load('Y_test.npy')
 y_train = np.load('Y_train.npy')
 
-## Reshape in order to X_train and test be used as input to the CNNN
+## Reshape in order to X_train and test be used as input to the CNN
 X_train = X_train.reshape(-1, 16, 40, 1)
 X_test = X_test.reshape(-1, 16, 40, 1)
-
 
 num_classes = 18
 input_shape = (16, 40, 1)
@@ -48,8 +45,6 @@ token_emb = keras.Sequential(
     ],
     name="token_emb",
 )
-
-
 
 def mlp(x, hidden_units, dropout_rate):
     for units in hidden_units:
@@ -127,7 +122,6 @@ def create_tmc_vit_classifier():
     model = keras.Model(inputs=inputs, outputs=logits)
     return model
 
-
 model = create_tmc_vit_classifier()
 
 model.compile(loss='sparse_categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
@@ -135,4 +129,3 @@ model.compile(loss='sparse_categorical_crossentropy', optimizer='adam', metrics=
 callback = tf.keras.callbacks.EarlyStopping(monitor='val_accuracy', min_delta=0, patience=70, mode='max', restore_best_weights=True)
 
 history = model.fit(X_train, y_train, batch_size=128, epochs=500, verbose = 0, validation_data=(X_test, y_test),callbacks=[callback])
-

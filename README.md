@@ -7,7 +7,7 @@
 --------------------------------------------------------------------------------
 
 # Temporal Multi-Channel Vision Transformer (TMC-ViT)
-This project implements a Transformer-based model called Temporal Multi-Channel Vision Transformer (TMC-ViT). The TMC-ViT was developed to adapt the Vision Transformer model proposed by Dosovitskiy et al.[[1]](#1) for processing multi-channel temporal signals as input. In this example, we will predict 18 gestures from the Ninapro DB05 Database. This has also been implemented in a Google Colab project<https://colab.research.google.com/drive/1ZWhzv8EOtwCHfuytcvOSKZQ76hSCQdFJ?hl=pt-BR#scrollTo=5K2na9pj0KJn>.
+This project implements a Transformer-based model called Temporal Multi-Channel Vision Transformer (TMC-ViT). The TMC-ViT was developed to adapt the Vision Transformer model proposed by Dosovitskiy et al.[[1]](#1) for processing multi-channel temporal signals as input. In this example, we will predict 18 gestures from the Ninapro DB05 Database. This has also been implemented in a [Google Colab project](https://colab.research.google.com/drive/1ZWhzv8EOtwCHfuytcvOSKZQ76hSCQdFJ?hl=pt-BR#scrollTo=5K2na9pj0KJn).
 
 ## Loading the data
 The input data must already be divided into training and test sets, with 200 ms samples. Use one separate repetition for testing. More information on the data preprocessing can be found in [[2]](#2).

@@ -15,6 +15,5 @@ The input data must already be divided into training and test sets, with 200 ms 
 ## References
 <a id="1">[1]</a> 
 Dosovitskiy, A., Beyer, L., Kolesnikov, A., Weissenborn, D., Zhai, X., Unterthiner, T., Dehghani, M., Minderer, M., Heigold, G., Gelly, S., Uszkoreit, J., & Houlsby, N. (2020). An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale. 1–21. http://arxiv.org/abs/2010.11929  
-
 <a id="2">[2]</a>  
 R. V. Godoy et al., "Electromyography-Based, Robust Hand Motion Classification Employing Temporal Multi-Channel Vision Transformers," in IEEE Robotics and Automation Letters, vol. 7, no. 4, pp. 10200-10207, Oct. 2022, doi: 10.1109/LRA.2022.3192623.
